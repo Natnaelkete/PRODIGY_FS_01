@@ -1,0 +1,113 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--pure-white);
+}
+
+.form-wrapper {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px rgba(250, 39, 39, 0.2);
+  background-color: var(--pure-white);
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3rem;
+}
+
+form h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: start;
+  margin-bottom: 3.5rem;
+}
+
+input {
+  border: none;
+  padding: 1.4rem 2rem;
+  background-color: white;
+  color: black;
+  outline: 1px solid var(--light-dark);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--light-dark);
+}
+
+.img-container {
+  background: linear-gradient(
+      4deg,
+      rgba(250, 39, 39, 0.6) 20%,
+      rgba(255, 251, 233, 0.1) 50%
+    ),
+    url("../assets/sd.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.8s ease-out, background 1s ease-out;
+}
+
+.img-container.animate {
+  background: linear-gradient(
+      4deg,
+      rgba(250, 39, 39, 0.6) 20%,
+      rgba(255, 251, 233, 0.1) 50%
+    ),
+    url("../assets/as.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translateX(-100%);
+}
+
+.btn {
+  border: none;
+  padding: 1.3rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--light-gray);
+  border-radius: 5px;
+  background-color: rgba(250, 39, 39);
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+.btn:hover {
+  background-color: rgb(187, 31, 31);
+}
+
+.link {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.show-error {
+  outline: 1px solid orangered;
+}

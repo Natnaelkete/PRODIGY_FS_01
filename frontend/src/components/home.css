@@ -1,0 +1,9 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  height: 100dvh;
+}

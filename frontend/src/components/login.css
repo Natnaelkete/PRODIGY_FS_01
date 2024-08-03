@@ -1,0 +1,24 @@
+.sign-in {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.sign-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sign-in.hide {
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+p {
+  color: orangered;
+  font-size: 1.2rem;
+}
